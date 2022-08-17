@@ -1,10 +1,12 @@
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link href="https://fonts.googleapis.com/css?family=Merriweather:300|Raleway:400,700" rel="stylesheet">
-<link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
-<title>{{ page.title | default: site.title }}</title>
-{% seo %}
-{% if site.plainwhite.dark_mode %}
-<script type="text/javascript" src="{{ "/assets/js/darkmode.js" | relative_url }}"></script>
-{% endif %}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
+  <link rel="stylesheet" href="{{ 'assets/styles.css' | relative_url }}">
+
+  {%- seo -%}
+  {%- feed_meta -%}
+
+  {%- include custom-head.html -%}
+</head>

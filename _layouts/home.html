@@ -2,56 +2,44 @@
 layout: default
 ---
 
-{%- if page.title -%}
-  <h1 class="page-heading">{{ page.title }}</h1>
-{%- endif -%}
+{% include home-header.html %}
 
-{{ content }}
+<div class="posts">
+  {% for post in paginator.posts %}
+  <section class="post-entry">
+    <h2 class="post-title">
+      <a href="{{ post.url | relative_url }}">
+        {{ post.title }}
+      </a>
+    </h2>
 
-{%- if site.posts.size > 0 -%}
-  <ul class="posts">
-    <li class="posts-labelgroup" id="posts-labelgroup">
-      <h1 id="posts-label">posts</h1>
-      {% if site.plainwhite.search %}
-      <div class="search-container">
-        <div class="search-section">
-          <i class="icon-search"></i>
-          <input type="text" name="search" id="searchbar" autocomplete="off" aria-label="search in posts">
-        </div>
-        <div class="search-results" id="search-results" data-placeholder="No Results" style="display: none;"></div>
-      </div>
-      {% endif %}
-    </li>
-
-    {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.plainwhite.date_format | default: "%b %-d, %Y" -%}
-        <a class="post-link" href="{{ post.url | relative_url }}">
-          <h2 class="post-title">{{ post.title | escape }}</h2>
+    <div class="post-meta">
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
+      {%- if jekyll.environment == "production" and site.disqus -%}
+        <span> • </span>
+        <a class="comment-count" href="{{ post.url | relative_url }}#disqus_thread">
+          <span class="disqus-comment-count" data-disqus-url="{{ post.url | absolute_url }}"></span>
         </a>
-        <div class="post-meta">
-          <div class="post-date">
-            <i class="icon-calendar"></i>
-            {{ post.date | date: date_format }}
-          </div>
-          {%- if post.categories.size > 0-%}
-          <ul class="post-categories">
-            {%- for tag in post.categories -%}
-            <li>{{ tag }}</li>
-            {%- endfor -%}
-          </ul>
-          {%- endif -%}
-        </div>
-        <div class="post">
-          {%- if site.show_excerpts -%}
-            {{ post.excerpt }}
-          {%- endif -%}
-        </div>
-      </li>
-    {%- endfor -%}
-  </ul>
+      {%- endif -%}
+    </div>
 
-  <!-- <p class="feed-subscribe"><svg class="svg-icon orange">
-		<use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use>
-	</svg><a href="{{ "/feed.xml" | relative_url }}">Subscribe</a></p> -->
-{%- endif -%}
+    <p>{{ post.excerpt | strip_html }}</p>
+  </section>
+  {% endfor %}
+  {%- if jekyll.environment == "production" and site.disqus -%}
+    <script id="dsq-count-scr" src="//{{ site.disqus }}.disqus.com/count.js" async></script>
+  {%- endif -%}
+</div>
+
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ paginator.next_page_path | relative_url }}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    <a class="pagination-item newer" href="{{ paginator.previous_page_path | prepend: relative_url }}">Newer</a>
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>
