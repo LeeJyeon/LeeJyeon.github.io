@@ -1,10 +1,11 @@
 ---
 layout: post
 title: 무엇인가 적는다는 것은 어려운 것은
-date: 2022-08-18 22:13 +0800
-last_modified_at: 2022-08-18 22:13:25 +0800
-tags: [jekyll theme, jekyll, tutorial]
-toc:  true
+author: Jyeon
+tags:
+- jekyll theme
+- jekyll
+date: 2022-08-18 13:56 +0800
 ---
 # 무엇인가 적는다는 것은 어려운것
 ## 그것이 어려운 것은 사실입니다
