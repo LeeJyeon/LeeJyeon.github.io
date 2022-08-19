@@ -3,7 +3,8 @@ layout: post
 title: 무엇인가 적는다는 것은 어려운 것
 categories: Welcome
 tags:
-- 잡담
+- welcome
+- blog
 date: 2022-08-19 19:19 +0800
 ---
 # 그것이 어려운 것은 사실입니다
