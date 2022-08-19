@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 무엇인가 적는다는 것은 어려운 것
-author: Jyeon
+categories: Welcome
 tags:
 - 잡담
 date: 2022-08-19 19:19 +0800

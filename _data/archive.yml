@@ -1,3 +1,6 @@
+- type: blog
+  title: Blog
+  url: /
 - type: dates
   title: Dates
   url: /dates/
