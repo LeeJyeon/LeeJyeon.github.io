@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Redis-Distribution-Lock
-categories: Redis
+categories: Welcome
 tags:
 - MSA
 - Redis
