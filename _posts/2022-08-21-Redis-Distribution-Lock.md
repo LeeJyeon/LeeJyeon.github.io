@@ -5,7 +5,8 @@ categories: Redis
 tags:
 - MSA
 - Redis
-date: 2022-08-21 22:00 +0800toc: true
+date: 2022-08-21 22:00 +0800
+toc: true
 comment: true
 ---
 Redis-Distribution-Lock 설명
