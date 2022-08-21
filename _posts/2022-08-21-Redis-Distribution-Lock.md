@@ -1,21 +1,22 @@
----
+- - - -
 layout: post
-title: Welcome!
-categories: Welcome
+title: Redis-Distribution-Lock
+categories: Redis
 tags:
-- welcome
-- blog
+* MSA
+* Redis
 date: 2022-08-21 22:00 +0800
 toc: true
 comment: true
----
-Welcome
+- - - -
+Redis-Distribution-Lock 설명
 {: .message}
 
-# 글을 쓰는 것은 어려운 것
+# Redis-Distribution-Lock
+Redis 기반의 분산 락
 
-그것이 어려운 것은 사실입니다
+![](2022-08-21-Redis-Distribution-Lock/Transaction%20Lock-Redis.png)
 
-그렇다고
-안쓸순 없자농 
-하..
+위와 같습니다.
+
+
