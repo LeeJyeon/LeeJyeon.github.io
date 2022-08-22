@@ -10,7 +10,8 @@ date: 2022-08-22
 toc: true
 comment: true
 ---
-*분산 환경*에서 다발적으로 인입하는 *Transaction 제어*를 위한 Redis-Distribution-Lock 
+분산 환경에서 다발적으로 인입하는 Transaction 제어를 위한
+**Redis-Distribution-Lock** 
 {: .message}
 
 # Redis-Distribution-Lock
@@ -27,8 +28,9 @@ comment: true
 		-  Wait Time : 인입하려는 Transaction 의 Lock 이 선점되있을 경우, 기다리는 시간
 		- Release Time : 획득한 Lock 을 유효시간 동안만 유지하고 해제하게 됨
 
-### *Release Time 을 직접 제어* 하기 때문에 RDB 만큼 절대적으로 제어할 수 없음
-유사한 트랜잭션이 밀려들어오는 상황을 선제적으로 제어하는 정도로만 이해하고 사용하자!
+## 주의
+Release Time 을 **직접 제어** 하기 때문에 RDB 만큼 절대적으로 제어할 수 없음
+::동일 트랜잭션이 밀려들어오는 상황을 선제적으로 제어::하는 정도로만 이해하고 사용하자!
 
 
 
