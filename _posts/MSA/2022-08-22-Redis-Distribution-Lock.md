@@ -19,8 +19,8 @@ comment: true
 ![Redis-Lock](/assets/img/Transaction Lock-Redis.png)
 
 ## 관련 문서
-[Distributed Locks with Redis](https://redis.io/docs/reference/patterns/distributed-locks/)
-[RLock-redisson](https://www.javadoc.io/doc/org.redisson/redisson/2.8.2/org/redisson/api/RLock.html)
+- [Distributed Locks with Redis](https://redis.io/docs/reference/patterns/distributed-locks/)
+- [RLock-redisson](https://www.javadoc.io/doc/org.redisson/redisson/2.8.2/org/redisson/api/RLock.html)
 
 ## 설명
 
