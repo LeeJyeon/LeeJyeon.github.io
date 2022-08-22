@@ -13,9 +13,7 @@ comment: true
 분산 환경에서 다발적으로 인입하는 Transaction 제어
 {: .message}
 
-## Redis-Distribution-Lock
-기본적인 Sequence Diagram 은 아래와 같다.
-
+## Sequence Diagram
 ![Redis-Lock](/assets/img/Transaction Lock-Redis.png)
 
 ## 관련 문서
