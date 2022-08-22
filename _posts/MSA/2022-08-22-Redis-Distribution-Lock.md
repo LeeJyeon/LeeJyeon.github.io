@@ -6,7 +6,7 @@ categories:
 tags:
 - MSA
 - Redis
-date: 2022-08-22 00:00 +0800
+date: 2022-08-22
 toc: true
 comment: true
 ---
