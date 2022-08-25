@@ -28,7 +28,7 @@ comment: true
 4. 바로 Commit 해, 자원을 반환해야 의미가 있음!!
 
 ## Sequence Diagram
-![Redis-Lock](/assets/img/Optimistic Lock.png)
+![Optimistic-Lock](/assets/img/Optimistic Lock.png)
 
 ## 관련 문서
 - [Optimistic Locking with JPA](https://hackernoon.com/optimistic-and-pessimistic-locking-in-jpa)
