@@ -41,12 +41,14 @@ Exception 발생시, 수정한 데이터에 대해서 **직접 원복** 처리�
 
 그 과정에서 데이터의 version이 1회 바뀐게 아니라, 2회 이상 수정되었다면 골치아플 수 있다
 
-ex) (name:first / version:1) → (name:second / version:2) 로 바꾸고, 이후 로직을 진행하다가 // 다른 곳에서 실패함
+ex)
 
-    (name:second / version:2)를 찾아 (name:first / version:3) 원복하려는데
+(name:first / version:1) → (name:second / version:2) 로 바꾸고, 이후 로직을 진행하다가 // 다른 곳에서 실패함
 
-    다른 곳의 접근으로 (name:ninth / version:5)가 되있음
+(name:second / version:2)를 찾아 (name:first / version:3) 원복하려는데
 
-    ▶︎ 단순이 4~5 버전으로 다시 수정하면 되지않느냐?
+다른 곳의 접근으로 (name:ninth / version:5)가 되있음
 
-     다른 곳에서 정합하게 이름을 "아홉째" 로 바꿨는데....내가 다시 바꿔줘도 되는지 알 수 없음!!
+▶︎ 단순히 4~5 버전으로 다시 수정하면 되지않느냐?
+
+다른 곳에서 정합하게 이름을 "아홉째" 로 바꿨는데....내가 다시 바꿔줘도 되는지 알 수 없음!!
