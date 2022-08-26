@@ -42,8 +42,6 @@ Exception 발생시, 수정한 데이터에 대해서 **직접 원복** 처리�
 Rollback 하려는데, 데이터의 version이 더 많이 수정되었다면 골치아프다..
 
 - example
-
-ex)
 1.(name:first / version:1) → (name:second / version:2) 바꾸고
 2.이후 로직을 진행하다가, Exception 발생
 3.(name:second / version:2)를 찾아 (name:first / version:3) 원복하려는데
@@ -52,4 +50,5 @@ ex)
 ▶︎ 단순히 4~5 버전으로 다시 수정하면 되지않느냐?
 
 다른 곳에서 정합하게 이름을 "아홉째" 로 바꿨는데....
+
 내가 다시 바꿔줘도 되는지 알 수 없음!!
