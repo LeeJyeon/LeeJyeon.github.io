@@ -59,7 +59,7 @@ MSA 환경에서는 서비스간 별도의 DB를 운영해 환경을 격리시�
 
 ## Sequence Diagram
 
-![/assets/img/SAGA(Orchestration).png](/assets/img/SAGA(Orchestration).png)
+![SAGA(Orchestration)](/assets/img/SAGA(Orchestration).png)
 
 ---
 
