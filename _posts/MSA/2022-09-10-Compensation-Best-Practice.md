@@ -80,11 +80,13 @@ comment: true
 
 절대자(Supervisor) 는 각 Report 에 대해, 어떤 보상을 발행해야 하는지 사전에 아래와 같이 정의해둔다.
 
+{% highlight text %}
 - 결제Service에서 Report-1 발생시 : 쿠폰 취소, 배달 취소, 라이더 매칭 취소, 취소 문자 재발송
 - 결제Service에서 Report-2 발생시 : 배달 취소, 라이더 매칭 취소, 취소 문자 재발송
 - 주문Service에서 Report-1 발생시 : **주문 자체 로직만 재실행 (하위 서비스는 모두 정상 처리 그대로 Stay! 주문 자체만 retry!)**
 - 주문Service에서 Report-2 발생시 : 결제 취소, 배달 취소, 라이더 매칭 취소, 취소 문자 재발송
 - 주문Service에서 Report-3 발생시 : 결제 취소, **쿠폰 취소**, 배달 취소, 라이더 매칭 취소, 취소 문자 재발송
+{% endhighlight %}
 
 ### 문제점?
 
