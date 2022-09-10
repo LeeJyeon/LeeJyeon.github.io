@@ -1,3 +1,5 @@
+# SAGA (Orchestration)
+
 ---
 
 layout: post
@@ -31,9 +33,13 @@ MSA 환경에서는 서비스간 별도의 DB를 운영해 환경을 격리시�
 아래 예시를 보자!
 
 {% highlight text %}
-1.  Subscribe Service (구독서비스 가입 관리가 목적인 서비스)
-2. 👉 Pay Service (실시간 결제가 목적인 서비스)
-3. 👉 Balance Service (통장 잔고 관리가 목적인 서비스)
+
+✉️ Subscribe Service (구독서비스 가입 관리가 목적인 서비스)
+
+💵 Pay Service (실시간 결제가 목적인 서비스)
+
+🗄 Balance Service (통장 잔고 관리가 목적인 서비스)
+
 ⚠️ 구독서비스 가입시 → 실시간 결제가 필요하며 → 통장 잔고의 차감이 필요하다!!
 {% endhighlight %}
 
