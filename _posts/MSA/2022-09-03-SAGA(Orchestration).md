@@ -1,5 +1,3 @@
-# SAGA (Orchestration)
-
 ---
 
 layout: post
