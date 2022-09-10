@@ -1,12 +1,11 @@
 ---
 
 layout: post
-title: SAGA (Orchestration)
+title: SAGA(Orchestration)
 categories:
-
 - MSA
 tags:
-- SAGA
+- MSA
 - Transaction
 - Compensation
 date: 2022-09-03
@@ -33,9 +32,7 @@ MSA 환경에서는 서비스간 별도의 DB를 운영해 환경을 격리시�
 {% highlight text %}
 
 ✉️ Subscribe Service (구독서비스 가입 관리가 목적인 서비스)
-
 💵 Pay Service (실시간 결제가 목적인 서비스)
-
 🗄 Balance Service (통장 잔고 관리가 목적인 서비스)
 
 ⚠️ 구독서비스 가입시 → 실시간 결제가 필요하며 → 통장 잔고의 차감이 필요하다!!
