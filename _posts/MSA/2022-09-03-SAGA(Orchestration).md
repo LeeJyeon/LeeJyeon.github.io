@@ -3,7 +3,7 @@
 layout: post
 title: SAGA(Orchestration)
 categories:
-- MSA
+  - MSA
 tags:
 - MSA
 - Transaction
