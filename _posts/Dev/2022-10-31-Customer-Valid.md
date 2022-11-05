@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custmoer Valid
+title: Custmoer Validataion Annotation
 categories:
   - Dev
 tags:
@@ -34,11 +34,11 @@ implementation 'org.springframework.boot:spring-boot-starter-validation'
 ## RestController
 
 ```java
-    @PostMapping(value = "/valid/test")
-    public ResponseEntity<String> postValidator(@RequestBody @Valid ValidationEntity validationEntity) {
-        log.info(validationEntity.toString());
-        return new ResponseEntity<String>("OK", HttpStatus.OK);
-    }
+@PostMapping(value = "/valid/test")
+public ResponseEntity<String> postValidator(@RequestBody @Valid ValidationEntity validationEntity) {
+    log.info(validationEntity.toString());
+    return new ResponseEntity<String>("OK", HttpStatus.OK);
+}
 ```
 RequestBody 로 받는 객체에 @Valid 체크 애노테이션을 붙여준다!
 
