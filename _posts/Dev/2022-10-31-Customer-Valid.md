@@ -224,3 +224,6 @@ public void validationTest() {
 
 - 실패 케이스 2
 ![Fail-2](/assets/img/Validation-annotation-fail-2.png)
+
+- Junit Test Code 중 System.out.println(next.getMessage());
+![log](/assets/img/Valitaion-annotaion-junit.png)
