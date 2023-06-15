@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custmoer Validataion Annotation
+title: Custmor Validation Annotation
 categories:
   - Dev
 tags:
