@@ -160,7 +160,7 @@ context.buildConstraintViolationWithTemplate 같은 경우 Junit Test code 에�
 
 유효하지 않을경우 "MethodArgumentNotValidException" 이 발생한다.
 
-@ControllerAdice 를 통해, Controller 에서 발생하는 예외를 캐치해 처리한다.
+@ControllerAdvice 를 통해, Controller 에서 발생하는 예외를 캐치해 처리한다.
 
 ```java
 @ControllerAdvice
