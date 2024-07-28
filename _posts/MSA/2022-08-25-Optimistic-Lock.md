@@ -19,7 +19,7 @@ comment: true
 - 비관적 락(Pessimistic Lock)
 1. 일반적으로 알고있는 Database Table Lock 획득
 2. 다른 세션의 접근을 Lock 획득시 ~ 반환시점 까지 막게된다.
-3. 한 세션이 오랜기단 동안 자원을 점유하면, 다른 세션은 Time-out limit 까지 기다릴 수 밖에 없다.
+3. 한 세션이 오랜기간 동안 자원을 점유하면, 다른 세션은 Time-out limit 까지 기다릴 수 밖에 없다.
 
 - 낙관적 락(Optimistic Lock)
 1. Table에 version 정보라던지, 최근 접근자라던지, 하물며 timestamp 라던지의 정보로 where condition 추가 생성
